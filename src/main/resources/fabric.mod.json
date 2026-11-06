@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "pey",
+  "version": "${version}",
+  "name": "Pey",
+  "description": "Adds a /pey command that shows a payment message in chat.",
+  "authors": ["You"],
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.pey.PeyMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
