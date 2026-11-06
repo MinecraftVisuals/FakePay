@@ -25,10 +25,10 @@ public class PeyMod implements ModInitializer {
                                 String username = StringArgumentType.getString(context, "username");
                                 double amount = DoubleArgumentType.getDouble(context, "amount");
 
-                                Text message = Text.literal("You paid " + username + " ")
+                                                                Text message = Text.literal("You paid " + username + " ")
                                     .formatted(Formatting.WHITE)
-                                    .append(Text.literal("$" + FORMAT.format(amount))
-                                        .formatted(Formatting.GREEN));
+                                    .append(Text.literal("$").formatted(Formatting.GREEN))
+                                    .append(Text.literal(FORMAT.format(amount)).formatted(Formatting.WHITE));
 
                                 context.getSource().sendFeedback(() -> message, false);
                                 return 1;
