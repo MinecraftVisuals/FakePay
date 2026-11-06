@@ -3,7 +3,7 @@
   "id": "pey",
   "version": "${version}",
   "name": "Pey",
-  "description": "Adds a /pey command that shows a payment message in chat.",
+  "description": "Adds a /pay command that shows a payment message in chat.",
   "authors": ["You"],
   "environment": "*",
   "entrypoints": {
